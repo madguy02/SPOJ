@@ -8,7 +8,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     int n;
-    long long rj = 0;
+     long rj = 0;
     
     cin >> n;
     
@@ -27,10 +27,10 @@ int main(int argc, char const *argv[])
     {
         for (int j = i; j < n; ++j)
         {
-            long long iPutaJ = S[i] * S[j];
+             long iPutaJ = S[i] * S[j];
             for (int k = 0; k < n; ++k)
             {
-                long long zbroj = iPutaJ + S[k];
+                 long zbroj = iPutaJ + S[k];
                 map<long long, long long>::iterator it = intovi.find(zbroj);
                 if (it == intovi.end())
                 {
